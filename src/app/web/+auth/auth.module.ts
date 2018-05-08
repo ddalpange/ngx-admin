@@ -9,6 +9,6 @@ import { NbAuthModule } from '@nebular/auth';
     CommonModule,
     AuthRoutingModule,
     NbAuthModule
-  ],
+  ]
 })
 export class AuthModule { }
