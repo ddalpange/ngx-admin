@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
-import { MENU_ITEMS } from './pages-menu';
+import { MENU_ITEMS } from './examples-menu';
 
 @Component({
-  selector: 'ngx-pages',
+  selector: 'ngx-examples',
   template: `
     <ngx-sample-layout>
       <nb-menu [items]="menu"></nb-menu>
@@ -11,7 +11,7 @@ import { MENU_ITEMS } from './pages-menu';
     </ngx-sample-layout>
   `,
 })
-export class PagesComponent {
+export class ExamplesComponent {
 
   menu = MENU_ITEMS;
 }

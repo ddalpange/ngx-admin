@@ -62,7 +62,7 @@ import 'rxjs/add/operator/delay';
     </nb-layout>
   `,
 })
-export class SampleLayoutComponent  implements OnDestroy {
+export class SampleLayoutComponent implements OnDestroy {
 
   subMenu: NbMenuItem[] = [
     {
@@ -72,37 +72,37 @@ export class SampleLayoutComponent  implements OnDestroy {
     {
       title: 'Buttons',
       icon: 'ion ion-android-radio-button-off',
-      link: '/pages/ui-features/buttons',
+      link: '/examples/ui-features/buttons',
     },
     {
       title: 'Grid',
       icon: 'ion ion-android-radio-button-off',
-      link: '/pages/ui-features/grid',
+      link: '/examples/ui-features/grid',
     },
     {
       title: 'Icons',
       icon: 'ion ion-android-radio-button-off',
-      link: '/pages/ui-features/icons',
+      link: '/examples/ui-features/icons',
     },
     {
       title: 'Modals',
       icon: 'ion ion-android-radio-button-off',
-      link: '/pages/ui-features/modals',
+      link: '/examples/ui-features/modals',
     },
     {
       title: 'Typography',
       icon: 'ion ion-android-radio-button-off',
-      link: '/pages/ui-features/typography',
+      link: '/examples/ui-features/typography',
     },
     {
       title: 'Animated Searches',
       icon: 'ion ion-android-radio-button-off',
-      link: '/pages/ui-features/search-fields',
+      link: '/examples/ui-features/search-fields',
     },
     {
       title: 'Tabs',
       icon: 'ion ion-android-radio-button-off',
-      link: '/pages/ui-features/tabs',
+      link: '/examples/ui-features/tabs',
     },
   ];
   layout: any = {};
@@ -113,10 +113,10 @@ export class SampleLayoutComponent  implements OnDestroy {
   protected menuClick$: Subscription;
 
   constructor(protected stateService: StateService,
-              protected menuService: NbMenuService,
-              protected themeService: NbThemeService,
-              protected bpService: NbMediaBreakpointsService,
-              protected sidebarService: NbSidebarService) {
+    protected menuService: NbMenuService,
+    protected themeService: NbThemeService,
+    protected bpService: NbMediaBreakpointsService,
+    protected sidebarService: NbSidebarService) {
     this.layoutState$ = this.stateService.onLayoutState()
       .subscribe((layout: string) => this.layout = layout);
 
