@@ -6,7 +6,7 @@ import {
   NbLogoutComponent,
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
-  NbAuthComponent
+  NbAuthComponent,
 } from '@nebular/auth';
 
 const routes: Routes = [
